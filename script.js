@@ -10,22 +10,16 @@ const personalMovieDB =  {
     privat: false    
 };
 
-// for(let i = 0; i < 3; i++) {
-// const a = prompt ('Один из просмотренных фильмов?', '');
-// const b = prompt ('На сколько оцените его?', '');
-// i++;
-// personalMovieDB.movies[a] = b;
-
-// }
-// второй вариант цикла:
 let i = 0;
 
-while(i < 2) {
+do{
     const a = prompt ('Один из просмотренных фильмов?', '');
     const b = prompt ('На сколько оцените его?', '');
 i++;
 personalMovieDB.movies[a] = b;
-}
+} while(i < 2)
+
+
 
 console.log(personalMovieDB);
 
