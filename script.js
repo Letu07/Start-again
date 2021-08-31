@@ -55,9 +55,11 @@ const personalMovieDB =  {
     },
 
     toogleVisibleMyDB: function() {
+       if (personalMovieDB.privat) {
         personalMovieDB.privat = false;
     } else {
         personalMovieDB.privat = true;
+        }
+    
     }
-
 };
