@@ -59,7 +59,7 @@ const personalMovieDB =  {
 
     writeYourGenres: function() {
         for (let i = 1; i < 2; i++) {
-            let genres = prompt(`Введите ваши любимые жанры через запятую`);
+            let genres = prompt(`Введите ваши любимые жанры через запятую`). toLocaleLowerCase();
 
             if (genres == '' || genres == null) {
                 console.log('Вы ввели не корректные данные или не ввели вовсе');
